@@ -1,0 +1,50 @@
+.main__form {
+  flex: 4;
+}
+
+.feature {
+  padding: 0.8rem;
+  padding-top: 0.4rem;
+  border: 0;
+}
+
+.feature + .feature {
+  margin-top: 0.8rem;
+}
+
+.feature__name {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: bold;
+}
+
+.feature__item + .feature__item {
+  margin-top: 0.8rem;
+}
+
+.feature__list li {
+  list-style: none;
+  text-align: justify;
+}
+
+.feature__option {
+  border: 2px solid #d6d6d6;
+  border-radius: 0.4rem;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.feature__selected {
+  border: 2px solid black;
+}
+.feature__option:hover {
+  border-color: black;
+}
+
+.feature__selected:not(.feature__option) {
+  text-shadow: 1px 1px 2px #83c0fd;
+}
+
+.feature__option:not(.feature__selected) {
+  cursor: pointer;
+}
